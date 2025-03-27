@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://zackerthescar.github.io/myblob"
 
 title = "my title"
 
@@ -12,7 +12,13 @@ build_search_index = false
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+highlight_code = true
+highlight_theme = "boron"
 
 [extra]
 # Put all your custom variables here
+
+menu_items = [
+    {name = "home", url = "$BASE_URL"},
+    {name = "blog", url = "$BASE_URL/blog"}
+]
